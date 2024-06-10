@@ -43,7 +43,7 @@ $(function(){
     animateItem = function($item, toOpen, speed){ //item que je veux animer + ouverture ou fermeture + vitesse
         var $colorImage = $item.find(".color"), //trouve parli les descendants, l'item qui a la classe "color"
         itemParam = toOpen ? {width: "420px"}: {width: "140px"},  //si ouverture est vraie alors attribué la valeur 1 (420) SINON false et valeur = 140px
-        colorImageParam = toOpen ? {left: "0px"}: {width: "140px"};
+        colorImageParam = toOpen ? {left: "0px"}: {left: "140px"};
         $colorImage.animate(colorImageParam,speed); //animation sur color image et la passe en fonction des parametres de "colorImageParam"
         $item.animate(itemParam,speed); //animation pour faire apparaitre la description
     },
